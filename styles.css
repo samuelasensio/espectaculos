@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.event {
+    text-align: center;
+    padding: 20px;
+}
+
+.date {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.location {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1em;
+    font-weight: 400;
+    color: #555;
+}
