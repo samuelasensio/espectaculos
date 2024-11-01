@@ -11,20 +11,28 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
 }
 
 .agenda {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cambia el ancho mínimo según sea necesario */
     gap: 20px;
     width: 80%;
     max-width: 1200px;
+    padding: 20px; /* Agregado para espaciado alrededor de la cuadrícula */
 }
 
 .event {
     text-align: center;
     padding: 20px;
+    border: 1px solid #ddd; /* Borde para los eventos */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo ligero para eventos */
+    transition: transform 0.2s; /* Transición suave para el efecto de hover */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
 }
 
 .date {
